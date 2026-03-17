@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Figtree } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { NavigationMenuDemo } from "@/components/navbar";
 
-const figtree = Figtree({subsets:['latin'],variable:'--font-sans'});
+const figtree = Figtree({ subsets: ["latin"], variable: "--font-sans" });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +31,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <main className="relative min-h-screen w-full bg-[#fdf8f7] overflow-hidden  grid grid-rows-[auto_1fr]">
+          {/* Content goes here */}
+          <div className="flex justify-center mt-4">
+            <NavigationMenuDemo />
+          </div>
+          {children}
+        </main>
+
+        
       </body>
     </html>
   );
