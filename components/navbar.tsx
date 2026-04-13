@@ -15,7 +15,7 @@ export function NavigationMenuDemo() {
     <div className="absolute top-0 left-0 w-full flex flex-col items-center py-8 bg-transparent z-50">
       
       {/* THE NAME - Positioned above the links */}
-      <h1 className="text-4xl font-bold">Le Ngoc Quynh Nhu</h1>
+      <h1 className="text-3xl font-bold font-serif">Le Ngoc Quynh Nhu</h1>
         
 
       {/* THE NAV LINKS */}

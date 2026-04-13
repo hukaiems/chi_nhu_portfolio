@@ -11,12 +11,13 @@ export default function Home() {
         <div className="relative flex flex-col items-center lg:items-start text-center lg:text-left space-y-12 2xl:space-y-16">
           {/* Title & Intro */}
           <div className="max-w-md 2xl:max-w-xl">
-            <h1 className="text-5xl sm:text-4xl 2xl:text-6xl font-extrabold tracking-tighter text-slate-900 mb-4 sm:mb-6 font-serif whitespace-nowrap">
+            <h1 className="text-3xl sm:text-2xl 2xl:text-4xl font-extrabold tracking-tighter text-slate-900 mb-4 sm:mb-6 font-serif whitespace-nowrap">
               Hello, I'm Nhu Le
             </h1>
             <p className="text-base sm:text-lg 2xl:text-2xl text-slate-700 leading-relaxed">
-              Lecturer at Ton Duc Thang University & Doctoral Student at the
-              University of Ostrava
+              Lecturer at <a href="https://www.tdtu.edu.vn/" target="_blank" rel="noopener noreferrer">Ton Duc Thang University</a> & <br></br>Doctoral Student at the
+              <a href="https://www.osu.cz/" target="_blank" rel="noopener noreferrer">University of Ostrava</a> <br></br>
+              <span className="text-xl">Contact: <u><a href="mailto:lengocquynhnhu@tdtu.edu.vn">lengocquynhnhu@tdtu.edu.vn</a></u></span>
             </p>
           </div>
           {/* Main Photo with Paperclip */}
@@ -32,7 +33,7 @@ export default function Home() {
 
           {/* My Research Section */}
           <div className="max-w-md lg:max-w-sm xl:max-w-md w-full pt-8 sm:pt-12 lg:pt-8">
-            <h2 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold text-slate-900 mb-3 2xl:mb-5 font-serif italic">
+            <h2 className="text-2xl sm:text-3xl 2xl:text-4xl font-bold text-slate-900 mb-3 2xl:mb-5 font-serif italic">
               Research Interests
             </h2>
             <p className="text-sm sm:text-base 2xl:text-lg text-slate-800 leading-relaxed text-justify">
@@ -51,7 +52,7 @@ export default function Home() {
         <div className="relative flex flex-col items-center lg:items-end text-center lg:text-left space-y-16 2xl:space-y-24 mt-25">
           {/* About Me Section */}
           <div className="relative max-w-md lg:max-w-sm xl:max-w-md w-full">
-            <h2 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold text-slate-900 mb-3 2xl:mb-5 font-serif italic">
+            <h2 className="text-2l sm:text-3xl 2xl:text-4xl font-bold text-slate-900 mb-3 2xl:mb-5 font-serif italic">
               About Me
             </h2>
             {/* Added text-justify here */}
