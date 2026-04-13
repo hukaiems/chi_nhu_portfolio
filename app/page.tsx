@@ -12,16 +12,17 @@ export default function Home() {
           {/* Main Photo with Paperclip */}
           <div className="relative mt-8 lg:mt-0 w-[70%] sm:w-1/2 lg:w-[60%] 2xl:w-[70%] max-w-sm">
             <div className="p-2 sm:p-3 bg-white shadow-xl rotate-[-3deg]">
-              {/* Replace with Natalie's image - using aspect ratio for fluid scaling */}
-              <div className="w-full aspect-[4/5] bg-slate-200 object-cover flex items-center justify-center text-slate-400 text-sm sm:text-base">
-                Photo 1
-              </div>
+              <img
+                src="/nhu_anh_avatar.jpg"
+                alt="Nhu Le"
+                className="w-full aspect-[4/5] object-cover"
+              />
             </div>
           </div>
 
           {/* Title & Intro */}
           <div className="max-w-md 2xl:max-w-xl">
-            <h1 className="text-5xl sm:text-6xl 2xl:text-8xl font-extrabold tracking-tighter text-slate-900 mb-4 sm:mb-6 font-serif whitespace-nowrap">
+            <h1 className="text-5xl sm:text-4xl 2xl:text-6xl font-extrabold tracking-tighter text-slate-900 mb-4 sm:mb-6 font-serif whitespace-nowrap">
               Hello, I'm Nhu Le
             </h1>
             <p className="text-base sm:text-lg 2xl:text-2xl text-slate-700 leading-relaxed">
@@ -51,26 +52,33 @@ export default function Home() {
           </div>
 
           {/* Polaroids & Butterfly Cluster */}
-          <div className="relative flex justify-center lg:justify-end mt-12 w-full max-w-md 2xl:max-w-lg">
+          <div className="relative flex justify-center lg:justify-end w-full max-w-md 2xl:max-w-lg">
             {/* Butterfly image */}
             <img
               src="/plane-removebg-preview.png"
               alt="Plane"
-              className="absolute top-0 left-[10%] sm:left-[20%] lg:-left-[10%] w-auto max-w-48 sm:max-w-56 h-auto max-h-96 sm:max-h-[28rem] object-contain -translate-x-1/2 -translate-y-1/2 z-20 rotate-45"
+              className="absolute top-0 left-[10%] sm:left-[20%] lg:-left-[10%] w-auto max-w-48 sm:max-w-56 h-auto max-h-96 sm:max-h-[28rem] object-contain -translate-x-1/2 -translate-y-1/2 z-30 rotate-45"
             />
 
-            {/* Polaroid 1 */}
-            <div className="p-2 sm:p-3 pb-8 sm:pb-10 bg-white shadow-xl rotate-[5deg] translate-x-2 sm:translate-x-4 z-10 w-[55%] sm:w-[60%]">
-              <div className="w-full aspect-square bg-slate-200 flex items-center justify-center text-slate-400 text-xs sm:text-sm">
-                Polaroid 1
-              </div>
+            {/* Polaroid 1 (Top Layer, Left) */}
+            {/* We added z-20 so it stays on top, and -rotate-3 to tilt it left */}
+            <div className="z-20 p-2 sm:p-3 pb-8 sm:pb-10 bg-white shadow-xl -rotate-3 w-[55%] sm:w-[60%] shrink-0 mt-20">
+              <img
+                src="/anh_phong_canh_1.jpg"
+                alt="Scenery 1"
+                className="w-full aspect-square object-cover"
+              />
             </div>
 
-            {/* Polaroid 2 */}
-            <div className="p-2 sm:p-3 pb-6 sm:pb-8 bg-white shadow-lg rotate-[-8deg] -translate-x-4 -translate-y-4 sm:-translate-x-8 sm:-translate-y-8 w-[45%] sm:w-[50%] absolute right-[10%] sm:right-[5%] bottom-[-10%] sm:bottom-[-20%] lg:bottom-[-10%]">
-              <div className="w-full aspect-square bg-slate-200 flex items-center justify-center text-slate-400 text-xs sm:text-sm">
-                Polaroid 2
-              </div>
+            {/* Polaroid 2 (Bottom Layer, Right, Overlapped) */}
+            {/* -ml-[5%] pulls it slightly to the left for ~5% overlap */}
+            {/* mt-8 pushes it down slightly, and rotate-6 tilts it right */}
+            <div className="z-10 p-2 sm:p-3 pb-6 sm:pb-8 bg-white shadow-md rotate-6 w-[45%] sm:w-[50%] shrink-0 -ml-[5%] mt-20 sm:mt-30">
+              <img
+                src="/thuyen_hoi_an.jpg"
+                alt="Hoi An Boat"
+                className="w-full aspect-square object-cover"
+              />
             </div>
           </div>
 
