@@ -6,7 +6,7 @@ export default function Home() {
       <div className="absolute bottom-[-5%] left-[-10%] w-[120%] md:w-1/2 h-1/2 bg-[#c8badd] rounded-full blur-3xl opacity-40 pointer-events-none" />
 
       {/* Main Grid Container - Stepped max-widths to center content on laptops */}
-      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12 2xl:gap-24 max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full mx-auto mt-10">
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12 2xl:gap-24 max-w-5xl xl:max-w-6xl 2xl:max-w-7xl w-full mx-auto mt-20">
         {/* ================= LEFT COLUMN ================= */}
         <div className="relative flex flex-col items-center lg:items-start text-center lg:text-left space-y-12 2xl:space-y-16">
           {/* Title & Intro */}

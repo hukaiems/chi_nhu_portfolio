@@ -9,32 +9,31 @@ import {
 } from "@/components/ui/navigation-menu";
 
 export function NavigationMenuDemo() {
-  // We removed Shadcn's default trigger style completely.
-  // This gives us pure control: completely transparent background, 
-  // soft white hover, and no ugly white blocks on active pages.
-  const customNavStyle = "px-3 md:px-5 py-2 rounded-md font-serif text-base md:text-lg font-medium text-slate-700 hover:text-slate-900 hover:bg-white/50 transition-all cursor-pointer";
+  const customNavStyle = "px-3 md:px-5 py-2 rounded-md font-serif text-lg md:text-xl font-bold text-slate-700 hover:text-slate-900 hover:bg-white/50 transition-all cursor-pointer";
 
   return (
-   
-    <div className="absolute top-0 left-0 w-full flex justify-center py-6 bg-transparent z-50">
+    <div className="absolute top-0 left-0 w-full flex flex-col items-center py-8 bg-transparent z-50">
+      
+      {/* THE NAME - Positioned above the links */}
+      <h1 className="text-4xl font-bold">Le Ngoc Quynh Nhu</h1>
+        
+
+      {/* THE NAV LINKS */}
       <NavigationMenu>
         <NavigationMenuList className="space-x-1 md:space-x-2">
           
-          {/* Home Button */}
           <NavigationMenuItem>
             <NavigationMenuLink asChild className={customNavStyle}>
               <Link href="/">Home</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
 
-          {/* Publication & talks Button */}
           <NavigationMenuItem>
             <NavigationMenuLink asChild className={customNavStyle}>
-              <Link href="/publication_and_talks">Publication & Talks</Link>
+              <Link href="/publication_and_talks">Publications & Talks</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
 
-          {/* Corpus Button */}
           <NavigationMenuItem>
             <NavigationMenuLink asChild className={customNavStyle}>
               <Link
@@ -46,13 +45,6 @@ export function NavigationMenuDemo() {
               </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
-
-          {/* Timeline Button */}
-          {/* <NavigationMenuItem>
-            <NavigationMenuLink asChild className={customNavStyle}>
-              <Link href="/timeline">Trip Timeline</Link>
-            </NavigationMenuLink>
-          </NavigationMenuItem> */}
 
         </NavigationMenuList>
       </NavigationMenu>
